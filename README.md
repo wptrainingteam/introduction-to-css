@@ -16,8 +16,8 @@ After completing this lesson, you will be able to:
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
 
-*   Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/user-lessons/choosing-and-installing-a-theme/)
-*   Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/user-lessons/choosing-and-installing-plugins/)
+*   Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
+*   Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
 *   Basic understanding of HTML.
 
 ## Assets
@@ -36,19 +36,19 @@ You will be better equipped to work through this lesson if you have experience i
 3.  Do you have at least a basic knowledge of HTML?
 4.  Will you have a locally or remotely hosted sandbox WordPress site to use during class?
 
-> ## Teacher Notes
-> 
-> #### Pre-requisites:
-> 
-> This module is intended for anyone just starting out with WordPress, but who has enough experience to have gone as far as activating and trying out themes and plugins. Other than just a small presentation on CSS theory in the beginning (slides provided) the bulk of the session will be spent "hands-on" learning how to modify CSS for an existing theme. This module is not intended to take the place of a full course on CSS, but instead capture the interest of any user who wants to customize the appearance of their site, but has reached the limit of what is possible within wp-admin.
-> 
-> #### Set up:
-> 
-> *   The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
-> *   Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
-> *   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
-> *   Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
-> *   To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
+## Teacher Notes
+
+#### Pre-requisites:
+
+This module is intended for anyone just starting out with WordPress, but who has enough experience to have gone as far as activating and trying out themes and plugins. Other than just a small presentation on CSS theory in the beginning (slides provided) the bulk of the session will be spent "hands-on" learning how to modify CSS for an existing theme. This module is not intended to take the place of a full course on CSS, but instead capture the interest of any user who wants to customize the appearance of their site, but has reached the limit of what is possible within wp-admin.
+
+#### Set up:
+
+*   The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
+*   Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
+*   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
+*   Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
+*   To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
 
 ## Hands-on Walkthrough
 
@@ -125,11 +125,11 @@ This is the HTML element for our sticky post, and you can see this by reading in
 
 However that is not quite what we want. If left as-is, this style rule would only apply to articles with an ID that is equal to "4" which is the exact post we are on, as it is the 4th post we have created on our test site. In this case, we will need to create a new style declaration on our own, rather than use one that exists already. We can get around this by modifying the selector to instead say `article.sticky` which, in plain English works out to something like "Apply this rule to all articles that have the class equal to "sticky" which means this post, plus any sticky posts we make in the future." [![Screen Shot 2014-08-19 at 10.30.47 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-10.30.47-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-10.30.47-AM.png)
 
-> **ID vs. Class** You may notice in the above example, some selectors have a "#" in front of them, and some have a "." in front of them. This is used to denote if there is an ID or a class associated with this HTML element. Let's look at the original HTML that was highlighted in our inspector:
-> 
-> <pre>article id="post-4" class="post-4 post type-post status-publish format-standard sticky hentry category-uncategorized"</pre>
-> 
-> In this case, you would add a "#" in front of `#post-4` because in the original markup it appears as _id="post-4"_ whereas we added a "." in front of `.sticky` because it appears as _class="sticky"_ in the original markup.
+**ID vs. Class** You may notice in the above example, some selectors have a "#" in front of them, and some have a "." in front of them. This is used to denote if there is an ID or a class associated with this HTML element. Let's look at the original HTML that was highlighted in our inspector:
+
+<pre>article id="post-4" class="post-4 post type-post status-publish format-standard sticky hentry category-uncategorized"</pre>
+
+In this case, you would add a "#" in front of `#post-4` because in the original markup it appears as _id="post-4"_ whereas we added a "." in front of `.sticky` because it appears as _class="sticky"_ in the original markup.
 
 Now that we have created our new selector, let's add some styles to it. Start by applying the following background color:
 
@@ -228,9 +228,7 @@ Finally, save your changes, and with that our transformation of this site is com
 3.  Change the entire look and feel of your website.
 4.  All of the above.
 
-**Answer:** 4 - All of the above
-
-* * *
+**Answer:** 4. All of the above.
 
 **You can use your browser's web inspector utility to:**
 
@@ -239,9 +237,7 @@ Finally, save your changes, and with that our transformation of this site is com
 3.  Modify HTML and PHP
 4.  Directly edit your theme's existing CSS
 
-**Answer:** - Preview CSS changes in real time
-
-* * *
+**Answer:** 2. Preview CSS changes in real time
 
 **To save the changes you make in your browser's inspector tool, you must:**
 
@@ -250,9 +246,7 @@ Finally, save your changes, and with that our transformation of this site is com
 3.  Copy the new styles to a CSS editor plugin in the Dashboard
 4.  Nothing - Your changes are saved automatically
 
-**Answer:** 3 - Copy the new styles to a CSS editor plugin in the Dashboard
-
-* * *
+**Answer:** 3. Copy the new styles to a CSS editor plugin in the Dashboard
 
 **You can use the `background` property to:**
 
@@ -261,7 +255,7 @@ Finally, save your changes, and with that our transformation of this site is com
 3.  Insert generated content
 4.  Control how text is handled on the element it is applied to
 
-**Answer:** 2 - Display an image as a page background and control how many times it is displayed
+**Answer:** 2. Display an image as a page background and control how many times it is displayed
 
 ## Additional Resources
 
