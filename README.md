@@ -8,26 +8,26 @@ In this lesson you will learn about CSS (Cascading Style Sheet) and how it is th
 
 After completing this lesson, you will be able to:
 
-*   Define CSS and explain what it does.
-*   Recognize the lingo of CSS.
-*   Use basic CSS to modify your site’s appearance.
+- Define CSS and explain what it does.
+- Recognize the lingo of CSS.
+- Use basic CSS to modify your site’s appearance.
 
 ## Prerequisite Skills
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
 
-*   Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
-*   Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
-*   Basic understanding of HTML.
+- Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
+- Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
+- Basic understanding of HTML.
 
 ## Assets
 
-*   [Twenty Twelve theme](http://wordpress.org/themes/twentytwelve)
-*   [Sample XML file](https://cloudup.com/ceStaDp8uY2) - XML import file
-*   [Sample Images (.zip)](https://cloudup.com/cG24oZL8b6U) - Have students add to the Media Library
-*   [Jetpack plugin](http://wordpress.org/plugins/jetpack/) (+ activate Custom CSS module)
-*   [Online Color picker tool](http://www.colorpicker.com/)
-*   [W3C CSS validator](http://www.css-validator.org/validator)
+- [Twenty Twelve theme](http://wordpress.org/themes/twentytwelve)
+- [Sample XML file](https://cloudup.com/ceStaDp8uY2) - XML import file
+- [Sample Images (.zip)](https://cloudup.com/cG24oZL8b6U) - Have students add to the Media Library
+- [Jetpack plugin](http://wordpress.org/plugins/jetpack/) (+ activate Custom CSS module)
+- [Online Color picker tool](http://www.colorpicker.com/)
+- [W3C CSS validator](http://www.css-validator.org/validator)
 
 ## Screening Questions
 
@@ -44,11 +44,11 @@ This module is intended for anyone just starting out with WordPress, but who has
 
 #### Set up:
 
-*   The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
-*   Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
-*   It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
-*   Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
-*   To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
+- The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
+- Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
+- It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
+- Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
+- To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
 
 ## Hands-on Walkthrough
 
@@ -56,23 +56,23 @@ This module is intended for anyone just starting out with WordPress, but who has
 
 Welcome to Intro to CSS! Today you are going to learn how to alter the “look and feel” of your WordPress Theme by modifying its existing Cascading Style Sheet (CSS) file, as well as write a few new styles of your own. In practical terms, the code found within your theme's CSS file determines the appearance of your site by applying style rules to HTML content, which has no style of its own. One way to visualize this is to think of your site as an HTML "mannequin" and CSS as the "clothing" you put on it. Just like a mannequin's clothing, you can change the CSS of your site any time you like, without altering its underlying HTML structure. For example, with just a few lines of CSS (and a few image files) we are able to turn our site into this: [![intro-to-css-before-after](http://make.wordpress.org/training/files/2014/06/intro-to-css-before-after.gif)](http://make.wordpress.org/training/files/2014/06/intro-to-css-before-after.gif)
 
-* * *
+---
 
 ### Learning the Lingo: Selectors, Properties, and Values
 
 Like any foreign language, CSS can be made easier to understand by breaking down each "sentence" into its individual components. Here is an example of a common CSS declaration, as well as a diagram of what each CSS component is made of: [![CSS diagram](http://make.wordpress.org/training/files/2014/06/CSS-diagram.jpg)](http://make.wordpress.org/training/files/2014/06/CSS-diagram.jpg) Because our plan is to find and modify the existing CSS of our theme, this will help you to better understand what is going on: [![CSS diagram-english](http://make.wordpress.org/training/files/2014/06/CSS-diagram-english.jpg)](http://make.wordpress.org/training/files/2014/06/CSS-diagram-english.jpg)
 
-*   **Selector** - <span style="font-weight: 400">The HTML element that you want to change.</span>
-*   **Property** - What you are changing about it.
-*   **Value** - What you are changing it to.
+- **Selector** - <span style="font-weight: 400">The HTML element that you want to change.</span>
+- **Property** - What you are changing about it.
+- **Value** - What you are changing it to.
 
-* * *
+---
 
 ### How to Edit Theme CSS the Right Way
 
 It is technically possible to locate and edit the existing CSS file that is hosted on your server, but this is a bad idea. The reason is that when an update to your theme happens (either to release new features or to improve security) any changes you make to the existing style sheet are overwritten by the update, erasing your hard work. There is a way around this: use a plugin that keeps your changes safe from updates. We will be using a plugin called "Jetpack" to accomplish this task. Jetpack functions by leaving the theme's existing CSS untouched while _inserting_ your modified style rules before rendering what is seen in the browser.
 
-* * *
+---
 
 ### Finding Your Theme's Styles
 
@@ -80,20 +80,20 @@ It is technically possible to locate and edit the existing CSS file that is host
 
 ## Exercises
 
-**Exercise 1 - Modifying Fonts** For this exercise, we will be making changes to the blog title text found at the top of blog articles on your site. To locate the CSS for this element, right click on any blog title on your test site's home page. Next choose the **Inspect** option, which will launch your browser's developer tools. [![right-click to inspect](http://make.wordpress.org/training/files/2014/06/right-click-to-inspect.png)](http://make.wordpress.org/training/files/2014/06/right-click-to-inspect.png) In the panel below you will see a split view, with:
+**Exercise 1 - Modifying Fonts** For this exercise, we will be making changes to the blog title text found at the top of blog articles on your site. To locate the CSS for this element, right click on any blog title on your test site's home page. Next choose the **Inspect** option, which will launch your browser's developer tools. [![right-click to inspect](/images/right-click-to-inspect.jpg)](/images/right-click-to-inspect.jpg) In the panel below you will see a split view, with:
 
-*   Site HTML on the left with the element you selected highlighted.
-*   CSS rules on the right that apply to that selected element on the right.
-*   Above is your website, where you can see your changes previewed live.
+- Site HTML on the left with the element you selected highlighted.
+- CSS rules on the right that apply to that selected element on the right.
+- Above is your website, where you can see your changes previewed live.
 
-[![inspector](http://make.wordpress.org/training/files/2014/06/inspector.gif)](http://make.wordpress.org/training/files/2014/06/inspector.gif) If you were careful in where you placed your cursor, you should see the HTML starting with `<a href="http://` and then the permalink to that blog post. You should also see styles displayed on the right, all of which have a style rule that applies to the  element we've highlighted. In particular, we are interested in this CSS declaration:
+[![inspector](http://make.wordpress.org/training/files/2014/06/inspector.gif)](http://make.wordpress.org/training/files/2014/06/inspector.gif) If you were careful in where you placed your cursor, you should see the HTML starting with `<a href="http://` and then the permalink to that blog post. You should also see styles displayed on the right, all of which have a style rule that applies to the element we've highlighted. In particular, we are interested in this CSS declaration:
 
 <pre>.entry-header .entry-title a {
 text-decoration: none;
 }
 </pre>
 
-By examining the existing declaration, we can see the theme author wanted to make sure that `.entry-header .entry-title a` elements (our blog titles) should _not_ have any text decorations applied. To see what that existing rule does, you can un-check the box in front of it, and in the preview above you will notice that an underline appears under the blog titles. [![underline](http://make.wordpress.org/training/files/2014/08/underline.png)](http://make.wordpress.org/training/files/2014/08/underline.png) This is because blog titles are just big links, and by default your browser is set to underline all links, including titles like these. So in this case, the theme author added this CSS declaration to _override_ this browser default. Let's re-select it again in our inspector to activate this declaration again, as the title does look nicer without an underline. But it would be nice if we could also change that declaration to add a few more styles of our own, such as making the titles bigger. To add our own styles, click on the blank area under the `text-decoration` property, then enter a custom property called: `font-size` You will notice as you start typing that the inspector will auto-suggest matching properties which you can select. [![Screen Shot 2014-08-19 at 9.16.17 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.16.17-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.16.17-AM.png) Once you have entered `font-size` property, hit the tab key on your keyboard to enter a value for this property. There are a few different ways you can specify this size, but let's go ahead and use pixels, which is easiest to understand. Enter a value of `40px`. [![Screen Shot 2014-08-19 at 9.18.03 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.18.03-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.18.03-AM.png) Now you will see in the preview that the size of your titles are much larger. If you wish, you can experiment and pick any size you want by entering a new value for `font-size` in the inspector. While we are here, let's go ahead and add a new declaration for
+By examining the existing declaration, we can see the theme author wanted to make sure that `.entry-header .entry-title a` elements (our blog titles) should _not_ have any text decorations applied. To see what that existing rule does, you can un-check the box in front of it, and in the preview above you will notice that an underline appears under the blog titles. [![underline](http://make.wordpress.org/training/files/2014/08/underline.png)](http://make.wordpress.org/training/files/2014/08/underline.png) This is because blog titles are just big links, and by default your browser is set to underline all links, including titles like these. So in this case, the theme author added this CSS declaration to _override_ this browser default. Let's re-select it again in our inspector to activate this declaration again, as the title does look nicer without an underline. But it would be nice if we could also change that declaration to add a few more styles of our own, such as making the titles bigger. To add our own styles, click on the blank area under the `text-decoration` property, then enter a custom property called: `font-size` You will notice as you start typing that the inspector will auto-suggest matching properties which you can select. [![auto suggest matching properties](/images/auto-suggest-matching-properties.jpg)](/images/auto-suggest-matching-properties.jpg) Once you have entered `font-size` property, hit the tab key on your keyboard to enter a value for this property. There are a few different ways you can specify this size, but let's go ahead and use pixels, which is easiest to understand. Enter a value of `40px`. [![Screen Shot 2014-08-19 at 9.18.03 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.18.03-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.18.03-AM.png) Now you will see in the preview that the size of your titles are much larger. If you wish, you can experiment and pick any size you want by entering a new value for `font-size` in the inspector. While we are here, let's go ahead and add a new declaration for
 
 <pre>font-weight: bold</pre>
 
@@ -103,7 +103,7 @@ and also add a new declaration for
 
 When you are done, your blog headings should look something like this: [![Screen Shot 2014-08-19 at 9.27.09 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.27.09-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.27.09-AM.png) The great thing about using your browser's inspector tool to modify CSS is that it is a great way to see what you are doing as you are changing it. However, if we were to reload the page, all our changes would be lost. That is because we are not actually modifying the site, but the CSS that is displayed by the browser. Saving our changes is easy, though. All you need to do is highlight the modified CSS in the inspector, and copy it to your computer's clipboard. [![copy-styles](http://make.wordpress.org/training/files/2014/06/copy-styles.gif)](http://make.wordpress.org/training/files/2014/06/copy-styles.gif) From here, go to your Dashboard, and navigate to **Appearance > Edit CSS** and paste in your first lines of custom CSS. When you are done, save your changes, and visit the home page of your site, where you can see your custom styles have been applied. [![Screen Shot 2014-08-19 at 9.43.56 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.43.56-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.43.56-AM.png)
 
-* * *
+---
 
 **Exercise 2 - Background Colors and Padding** One way that you can take advantage of CSS to customize your site is to apply styles specifically to features that are common in WordPress, like Sticky Posts. A Sticky Post is meant to _stick_ to the top of your blog page, rather than staying in date-order with your other posts. You can often find them being used to make an announcement, or to keep content that is important (but doesn't change often) prominently placed on the website. Let's use CSS to style our Sticky Post to give it a different look when compared to the standard blog posts on the page. If you are using the sample XML import file provided for this workshop, the topmost post titled "Important News" is already set to be a Sticky Post. One hint is the set of double borders and "Featured Post" heading above the title for the post, which is something the theme author added to this theme to display with Sticky Posts. [![Screen Shot 2014-08-19 at 9.55.10 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.55.10-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.55.10-AM.png) Start by hovering your cursor over "Featured Post" and and right-clicking on it to inspect that element. You should see `div class="featured-post"` highlighted in the HTML pane, and see `article-sticky .featured-post` in the CSS pane. [![Screen Shot 2014-08-19 at 9.59.56 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.59.56-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-9.59.56-AM.png) We are going to be doing something else to our sticky posts, so hide this feature by simply adding the following rule:
 
@@ -141,7 +141,7 @@ Notice that when you add this style to the inspector, the sticky article is give
 
 Your sticky post should now look something like this: [![Screen Shot 2014-08-19 at 10.52.58 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-10.52.58-AM.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-10.52.58-AM.png) As with last time, be sure to copy the CSS from the inspector to your computer's clipboard, then navigate to Appearance > Edit CSS and paste in your CSS. It should look something like this. [![Screen Shot 2014-08-19 at 10.56.11 AM](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-10.56.11-AM-280x300.png)](http://make.wordpress.org/training/files/2014/06/Screen-Shot-2014-08-19-at-10.56.11-AM.png) When you are done, save your changes.
 
-* * *
+---
 
 **Exercise 3 - Adding A Background Image** In the last exercise you were introduced to the `background` property in CSS, which allows you to change attributes of the background of any element. In the case of our Sticky Post, we used this property to change the background to a soft blue. You can also use the `background` property to display an image. To demonstrate this, we will add a background image to our site. To get started, hover your cursor over the white space to the right of the site title in the header, and right-click to inspect the element. In your browser inspector, you should see the following line of HTML highlighted:
 
@@ -213,11 +213,11 @@ Finally, save your changes, and with that our transformation of this site is com
 
 ## Additional Resources
 
-*   [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-*   [https://developers.google.com/web/tools/chrome-devtools/](https://developers.google.com/web/tools/chrome-devtools/)
-*   [https://developer.mozilla.org/en-US/docs/Tools](https://developer.mozilla.org/en-US/docs/Tools)
-*   [http://www.w3.org/Style/CSS/](http://www.w3.org/Style/CSS/)
-*   [http://www.webkit.org/projects/css/index.html](http://www.webkit.org/projects/css/index.html)
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [https://developers.google.com/web/tools/chrome-devtools/](https://developers.google.com/web/tools/chrome-devtools/)
+- [https://developer.mozilla.org/en-US/docs/Tools](https://developer.mozilla.org/en-US/docs/Tools)
+- [http://www.w3.org/Style/CSS/](http://www.w3.org/Style/CSS/)
+- [http://www.webkit.org/projects/css/index.html](http://www.webkit.org/projects/css/index.html)
 
 ## Quiz
 
