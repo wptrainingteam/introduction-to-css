@@ -97,16 +97,16 @@ Note: Here all 'p' tags in your document will be targeted.
 
 **2.Using its class.**
 
-A single class can be used multiple times and for different elements in a single document. If the element to be targeted has class, you can target it using that class. For targeting a class in CSS you will use a dot '.' before its class name. Let's see how it works?
+A single class can be used multiple times and for different elements in a single document. If the element to be targeted has class, you can target it using that class. For targeting a class in CSS you will use a dot '.' before its class name. Let's see how it works.
 
-Assume you have a 'p' tag with class 'text-small' which will look something like this `<p class="text-small"></p>` and you want its 'font-size' to be '12px'. You will write it as below:
+Assume you have a 'p' tag with class 'text-small' which will look something like this `<p class="text-small">Hello World!</p>` and you want its 'font-size' to be '12px'. You will write it as below:
 
 <pre>p.text-small {
     font-size: 12px;
 }
 </pre>
 
-Note: here only 'p' tags with class 'text-small' will be targeted. If you want all the elements, no matter which they are to be targetted you will simply remove 'p' and will just use .text-small.
+Note: Here only 'p' tags with class 'text-small' will be targeted. If you want all the elements, no matter which they are, to be targeted you will simply remove 'p' and will just use .text-small. This will target all the element with class 'text-small'.
 
 
 **3.Using its ID.**
