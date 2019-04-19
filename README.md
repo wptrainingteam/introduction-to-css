@@ -83,7 +83,8 @@ It is technically possible to locate and edit the existing CSS file that is host
 ### How to target a specific element in CSS?
 There are different ways to target a specific element in CSS depending upon the element itself. Below are the most common ways to target an element.
 
-1.Using its element name.
+**1.Using its element name.**
+
 Targeting element with its name is the most common way. we will use its name to target it and give it new properties and values. Let's see how it works.
 
 If you want to target a 'p' tag and assing its font-size property to 16px you will do that as below:
@@ -94,7 +95,8 @@ font-size: 16px;
 
 Note: Here all 'p' tags in your document will be targeted.
 
-2.Using its class.
+**2.Using its class.**
+
 A single class can be used multiple times and for different elements in a single document. If the element to be targeted has class, you can target it using that class. For targeting a class in CSS you will use a dot '.' before its class name. Let's see how it works?
 
 Assume you have a 'p' tag with class 'text-small' which will look something like this `<p class="text-small"></p>` and you want its 'font-size' to be '12px'. You will write it as below:
@@ -107,7 +109,8 @@ Assume you have a 'p' tag with class 'text-small' which will look something like
 Note: here only 'p' tags with class 'text-small' will be targeted. If you want all the elements, no matter which they are to be targetted you will simply remove 'p' and will just use .text-small.
 
 
-3.Using its ID.
+**3.Using its ID.**
+
 Unlike class, id should be always unique in your HTML document. To target an element with id you will have to just replace that dot '.' which you used for class with hash '#'. For example, if you have a 'p' tag with id 'name' which will look something like this: `<p id="name">John Doe</p>` and you want it to be bold you will target it as follow:
 
 <pre>#name {
