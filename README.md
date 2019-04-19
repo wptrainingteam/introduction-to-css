@@ -97,7 +97,7 @@ Note: Here all 'p' tags in your document will be targeted.
 2.Using its class.
 A single class can be used multiple times and for different elements in a single document. If the element to be targeted has class, you can target it using that class. For targeting a class in CSS you will use a dot '.' before its class name. Let's see how it works?
 
-Assume you have a 'p' tag with class 'text-small' which will look something like this '<pre><p class="text-small"></p></pre>' and you want its 'font-size' to be '12px'. You will write it as below:
+Assume you have a 'p' tag with class 'text-small' which will look something like this `<p class="text-small"></p>` and you want its 'font-size' to be '12px'. You will write it as below:
 
 <pre>p.text-small {
     font-size: 12px;
@@ -108,7 +108,7 @@ Note: here only 'p' tags with class 'text-small' will be targeted. If you want a
 
 
 3.Using its ID.
-Unlike class, id should be always unique in your HTML document. To target an element with id you will have to just replace that dot '.' which you used for class with hash '#'. For example, if you have a 'p' tag with id 'name' which will look something like this: <pre><p id="name">John Doe</p></pre> and you want it to be bold you will target it as follow:
+Unlike class, id should be always unique in your HTML document. To target an element with id you will have to just replace that dot '.' which you used for class with hash '#'. For example, if you have a 'p' tag with id 'name' which will look something like this: `<p id="name">John Doe</p>` and you want it to be bold you will target it as follow:
 
 <pre>#name {
     font-weight: bold;
