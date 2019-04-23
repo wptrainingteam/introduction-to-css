@@ -12,6 +12,30 @@ After completing this lesson, you will be able to:
 - Recognize the lingo of CSS.
 - Use basic CSS to modify your site’s appearance.
 
+## Target Audience
+
+* [ ] Designers
+* [ ] Developers
+
+
+## Experience Level
+
+How much experience would a participant need to get the most from this lesson?
+
+* [ ] Beginner
+
+
+## Type of Instruction
+
+* [ ] Demonstration
+* [ ] Exercises
+* [ ] Tutorial
+
+
+## Time Estimate (Duration)
+
+30 minutes
+
 ## Prerequisite Skills
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
@@ -20,7 +44,20 @@ You will be better equipped to work through this lesson if you have experience i
 - Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
 - Basic understanding of HTML.
 
-## Assets
+
+## Readiness Questions
+
+1.  Are you familiar with installing and activating themes via the WordPress Dashboard?
+2.  Have you used the tools found under the "Appearance" tab in your dashboard to customize your theme?
+3.  Do you have at least a basic knowledge of HTML?
+4.  Will you have a locally or remotely hosted sandbox WordPress site to use during class?
+
+
+## Slides
+
+*   [Slides](https://wptrainingteam.github.io/lesson-plans/introduction-to-css/slides/)
+
+## Materials Needed
 
 - [Twenty Twelve theme](http://wordpress.org/themes/twentytwelve)
 - [Sample XML file](https://cloudup.com/ceStaDp8uY2) - XML import file
@@ -29,12 +66,12 @@ You will be better equipped to work through this lesson if you have experience i
 - [Online Color picker tool](http://www.colorpicker.com/)
 - [W3C CSS validator](http://www.css-validator.org/validator)
 
-## Screening Questions
 
-1.  Are you familiar with installing and activating themes via the WordPress Dashboard?
-2.  Have you used the tools found under the "Appearance" tab in your dashboard to customize your theme?
-3.  Do you have at least a basic knowledge of HTML?
-4.  Will you have a locally or remotely hosted sandbox WordPress site to use during class?
+## Lesson Outline
+
+* First go through the intoduction, objectives, prerequisite skills mentioned in this Lesson.
+* Then start with 'Hands-on Walkthrough' and try to understand it.
+* After Finishing that go with Exercises, try to complete then and then take quiz.
 
 ## Teacher Notes
 
@@ -254,15 +291,7 @@ text-indent: -9999px;
 
 Finally, save your changes, and with that our transformation of this site is complete. All of the CSS changes you have added to your site should work well.
 
-## Additional Resources
-
-- [https://developer.mozilla.org/en-US/docs/Web/CSS/Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-- [https://developers.google.com/web/tools/chrome-devtools/](https://developers.google.com/web/tools/chrome-devtools/)
-- [https://developer.mozilla.org/en-US/docs/Tools](https://developer.mozilla.org/en-US/docs/Tools)
-- [http://www.w3.org/Style/CSS/](http://www.w3.org/Style/CSS/)
-- [http://www.webkit.org/projects/css/index.html](http://www.webkit.org/projects/css/index.html)
-
-## Quiz
+## Assessment
 
 **You can use CSS to:**
 
@@ -303,3 +332,15 @@ Finally, save your changes, and with that our transformation of this site is com
 ## Additional Resources
 
 [CSS](https://codex.wordpress.org/CSS) @ Codex
+
+## Example Lesson
+
+> An example of how the lesson plan can be implemented. Written in script form as one possible way an instructor might use this lesson plan at an event, with screenshots and instructions if necessary.
+
+### Section Heading for Example Lesson
+
+> You will likely need to break the Example Lesson down into multiple sections.
+
+### Lesson Wrap Up
+
+![](https://raw.githubusercontent.com/wptrainingteam/contributor-resources/master/images/lightbulb.png) Follow with the Exercises and Assessment outlined above.
