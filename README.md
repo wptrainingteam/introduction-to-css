@@ -11,6 +11,7 @@ After completing this lesson, you will be able to:
 - Define CSS and explain what it does.
 - Recognize the lingo of CSS.
 - Use basic CSS to modify your site’s appearance.
+- Use WordPress Customizer and Gutenberg Blocks to add custom CSS to your site or pages.
 
 ## Target Audience
 
@@ -156,6 +157,15 @@ Unlike class, id should be always unique in your HTML document. To target an ele
 </pre>
 
 Note: While targeting id you can also mention tag name before id name. It will look like this 'p#name'.
+
+
+## Using the WordPress Customizer
+WordPress allows you to add custom CSS styles via the WordPress Dashboard. Simply go to 'Appearance -> Customize'. Click on the 'Additional CSS' tab. Type in your custom styles without the `<style>...</style>` tag. Save your changes by clicking the 'Publish' button at the top. <br>
+[![right-click to inspect](/images/additional-css.jpg)](/images/additional-css.jpg)
+
+## Using Gutenberg Blocks (WordPress 5.0+)
+The introduction of Gutenberg Blocks now allows users to add `Custom HTML` blocks to individual pages or posts. In the Editor, add a `Custom HTML` block. Inside the block, type in your CSS *within* the `<style>...</style>` tag.<br>
+[![right-click to inspect](/images/gutenberg-block.jpg)](/images/gutenberg-block.jpg)
 
 
 ## Exercises
