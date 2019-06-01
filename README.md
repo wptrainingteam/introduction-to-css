@@ -9,28 +9,38 @@ In this lesson you will learn about CSS (Cascading Style Sheet) and how it is th
 After completing this lesson, you will be able to:
 
 - Define CSS and explain what it does.
-- Recognize the lingo of CSS.
+- Recognize the language of CSS.
 - Use basic CSS to modify your site’s appearance.
 - Use WordPress Customizer and Gutenberg Blocks to add custom CSS to your site or pages.
 
 ## Target Audience
 
-* [ ] Designers
-* [ ] Developers
+* [ ] Users
+* [x] Designers
+* [x] Developers
+* [ ] Speakers
+* [ ] All
 
 
 ## Experience Level
 
 How much experience would a participant need to get the most from this lesson?
 
-* [ ] Beginner
+* [x] Beginner
+* [ ] Intermediate
+* [ ] Advanced
+* [ ] Any
 
 
 ## Type of Instruction
 
-* [ ] Demonstration
-* [ ] Exercises
-* [ ] Tutorial
+* [x] Demonstration
+* [ ] Discussion
+* [x] Exercises
+* [ ] Feedback
+* [ ] Lecture (Presentation)
+* [ ] Show & Tell
+* [x] Tutorial
 
 
 ## Time Estimate (Duration)
@@ -67,20 +77,13 @@ You will be better equipped to work through this lesson if you have experience i
 - [Online Color picker tool](http://www.colorpicker.com/)
 - [W3C CSS validator](http://www.css-validator.org/validator)
 
+## Notes for the Instructor
 
-## Lesson Outline
-
-* First go through the intoduction, objectives, prerequisite skills mentioned in this Lesson.
-* Then start with 'Hands-on Walkthrough' and try to understand it.
-* After Finishing that go with Exercises, try to complete then and then take quiz.
-
-## Teacher Notes
-
-#### Pre-requisites:
+### Pre-requisites:
 
 This module is intended for anyone just starting out with WordPress, but who has enough experience to have gone as far as activating and trying out themes and plugins. Other than just a small presentation on CSS theory in the beginning (slides provided) the bulk of the session will be spent "hands-on" learning how to modify CSS for an existing theme. This module is not intended to take the place of a full course on CSS, but instead capture the interest of any user who wants to customize the appearance of their site, but has reached the limit of what is possible within wp-admin.
 
-#### Set up:
+### Set up:
 
 - The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
 - Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
@@ -88,85 +91,11 @@ This module is intended for anyone just starting out with WordPress, but who has
 - Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
 - To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
 
-## Hands-on Walkthrough
+## Lesson Outline
 
-### What is CSS? What does it do?
-
-Welcome to Intro to CSS! Today you are going to learn how to alter the “look and feel” of your WordPress Theme by modifying its existing Cascading Style Sheet (CSS) file, as well as write a few new styles of your own. In practical terms, the code found within your theme's CSS file determines the appearance of your site by applying style rules to HTML content, which has no style of its own. One way to visualize this is to think of your site as an HTML "mannequin" and CSS as the "clothing" you put on it. Just like a mannequin's clothing, you can change the CSS of your site any time you like, without altering its underlying HTML structure. 
-
----
-
-### Learning the Lingo: Selectors, Properties, and Values
-
-Like any foreign language, CSS can be made easier to understand by breaking down each "sentence" into its individual components.  Because our plan is to find and modify the existing CSS of our theme, this will help you to better understand what is going on.
-
-- **Selector** - <span style="font-weight: 400">The HTML element that you want to change.</span>
-- **Property** - What you are changing about it.
-- **Value** - What you are changing it to.
-
----
-
-### How to Edit Theme CSS the Right Way
-
-It is technically possible to locate and edit the existing CSS file that is hosted on your server, but this is a bad idea. The reason is that when an update to your theme happens (either to release new features or to improve security) any changes you make to the existing style sheet are overwritten by the update, erasing your hard work. There is a way around this: use a plugin that keeps your changes safe from updates. We will be using a plugin called "Jetpack" to accomplish this task. Jetpack functions by leaving the theme's existing CSS untouched while _inserting_ your modified style rules before rendering what is seen in the browser.
-
----
-
-### Finding Your Theme's Styles
-
-<span style="font-weight: 400">We are going to focus on modifying styles that are already there, rather than writing our own CSS from scratch. In order to change an existing style, you have to find it first. This can be done using the developer tools already built into your web browser. We will be using Google Chrome for this workshop, but most modern browsers offer similar tools.</span> <span style="font-weight: 400">It’s important to note that when using the inspector, you can edit your theme’s CSS, but not the HTML. That is because the HTML you see in your inspector is dynamically generated by PHP, and is not something you can directly edit. That’s OK though, because you can do a lot with CSS to modify your site’s appearance, as you will see in the upcoming exercises.</span>
-
----
-
-### How to target a specific element in CSS?
-There are different ways to target a specific element in CSS depending upon the element itself. Below are the most common ways to target an element.
-
-**1.Using its element name.**
-
-Targeting element with its name is the most common way. we will use its name to target it and give it new properties and values. Let's see how it works.
-
-If you want to target a 'p' tag and assing its font-size property to 16px you will do that as below:
-<pre>p {
-font-size: 16px;
-}
-</pre>
-
-Note: Here all 'p' tags in your document will be targeted.
-
-**2.Using its class.**
-
-A single class can be used multiple times and for different elements in a single document. If the element to be targeted has class, you can target it using that class. For targeting a class in CSS you will use a dot '.' before its class name. Let's see how it works.
-
-Assume you have a 'p' tag with class 'text-small' which will look something like this `<p class="text-small">Hello World!</p>` and you want its 'font-size' to be '12px'. You will write it as below:
-
-<pre>p.text-small {
-    font-size: 12px;
-}
-</pre>
-
-Note: Here only 'p' tags with class 'text-small' will be targeted. If you want all the elements, no matter which they are, to be targeted you will simply remove 'p' and will just use .text-small. This will target all the element with class 'text-small'.
-
-
-**3.Using its ID.**
-
-Unlike class, id should be always unique in your HTML document. To target an element with id you will have to just replace that dot '.' which you used for class with hash '#'. For example, if you have a 'p' tag with id 'name' which will look something like this: `<p id="name">John Doe</p>` and you want it to be bold you will target it as follow:
-
-<pre>#name {
-    font-weight: bold;
-}
-</pre>
-
-Note: While targeting id you can also mention tag name before id name. It will look like this 'p#name'.
-
-
-## Using the WordPress Customizer
-WordPress allows you to add custom CSS styles via the WordPress Dashboard. Simply go to 'Appearance -> Customize'. Click on the 'Additional CSS' tab. Type in your custom styles without the `<style>...</style>` tag. Save your changes by clicking the 'Publish' button at the top. <br>
-[![right-click to inspect](/images/additional-css.jpg)](/images/additional-css.jpg)
-
-## Using Gutenberg Blocks (WordPress 5.0+)
-The introduction of Gutenberg Blocks now allows users to add `Custom HTML` blocks to individual pages or posts. In the Editor, add a `Custom HTML` block. Inside the block, type in your CSS *within* the `<style>...</style>` tag.<br>
-[![right-click to inspect](/images/gutenberg-block.jpg)](/images/gutenberg-block.jpg)
-
+* First go through the intoduction, objectives, prerequisite skills mentioned in this Lesson.
+* Then start with 'Hands-on Walkthrough' and try to understand it.
+* After Finishing that go with Exercises, try to complete then and then take quiz.
 
 ## Exercises
 
@@ -192,8 +121,6 @@ and also add a new declaration for
 <pre>font-style: italic</pre>
 
 The great thing about using your browser's inspector tool to modify CSS is that it is a great way to see what you are doing as you are changing it. However, if we were to reload the page, all our changes would be lost. That is because we are not actually modifying the site, but the CSS that is displayed by the browser. Saving our changes is easy, though. All you need to do is highlight the modified CSS in the inspector, and copy it to your computer's clipboard. From here, go to your Dashboard, and navigate to **Appearance > Edit CSS** and paste in your first lines of custom CSS. When you are done, save your changes, and visit the home page of your site, where you can see your custom styles have been applied.
-
----
 
 **Exercise 2 - Background Colors and Padding** One way that you can take advantage of CSS to customize your site is to apply styles specifically to features that are common in WordPress, like Sticky Posts. A Sticky Post is meant to _stick_ to the top of your blog page, rather than staying in date-order with your other posts. You can often find them being used to make an announcement, or to keep content that is important (but doesn't change often) prominently placed on the website. Let's use CSS to style our Sticky Post to give it a different look when compared to the standard blog posts on the page. If you are using the sample XML import file provided for this workshop, the topmost post titled "Important News" is already set to be a Sticky Post. One hint is the set of double borders and "Featured Post" heading above the title for the post, which is something the theme author added to this theme to display with Sticky Posts. Start by hovering your cursor over "Featured Post" and and right-clicking on it to inspect that element. You should see `div class="featured-post"` highlighted in the HTML pane, and see `article-sticky .featured-post` in the CSS pane. We are going to be doing something else to our sticky posts, so hide this feature by simply adding the following rule:
 
@@ -230,8 +157,6 @@ Notice that when you add this style to the inspector, the sticky article is give
 <pre>padding: 20px;</pre>
 
  As with last time, be sure to copy the CSS from the inspector to your computer's clipboard, then navigate to Appearance > Edit CSS and paste in your CSS. When you are done, save your changes.
-
----
 
 **Exercise 3 - Adding A Background Image** In the last exercise you were introduced to the `background` property in CSS, which allows you to change attributes of the background of any element. In the case of our Sticky Post, we used this property to change the background to a soft blue. You can also use the `background` property to display an image. To demonstrate this, we will add a background image to our site. To get started, hover your cursor over the white space to the right of the site title in the header, and right-click to inspect the element. In your browser inspector, you should see the following line of HTML highlighted:
 
@@ -343,13 +268,84 @@ Finally, save your changes, and with that our transformation of this site is com
 
 [CSS](https://codex.wordpress.org/CSS) @ Codex
 
-## Example Lesson
+## Hands-on Walkthrough
 
-> An example of how the lesson plan can be implemented. Written in script form as one possible way an instructor might use this lesson plan at an event, with screenshots and instructions if necessary.
+### What is CSS? What does it do?
 
-### Section Heading for Example Lesson
+Welcome to Intro to CSS! Today you are going to learn how to alter the “look and feel” of your WordPress Theme by modifying its existing Cascading Style Sheet (CSS) file, as well as write a few new styles of your own. In practical terms, the code found within your theme's CSS file determines the appearance of your site by applying style rules to HTML content, which has no style of its own. One way to visualize this is to think of your site as an HTML "mannequin" and CSS as the "clothing" you put on it. Just like a mannequin's clothing, you can change the CSS of your site any time you like, without altering its underlying HTML structure.
 
-> You will likely need to break the Example Lesson down into multiple sections.
+---
+
+### Learning the Lingo: Selectors, Properties, and Values
+
+Like any foreign language, CSS can be made easier to understand by breaking down each "sentence" into its individual components.  Because our plan is to find and modify the existing CSS of our theme, this will help you to better understand what is going on.
+
+- **Selector** - <span style="font-weight: 400">The HTML element that you want to change.</span>
+- **Property** - What you are changing about it.
+- **Value** - What you are changing it to.
+
+---
+
+### How to Edit Theme CSS the Right Way
+
+It is technically possible to locate and edit the existing CSS file that is hosted on your server, but this is a bad idea. The reason is that when an update to your theme happens (either to release new features or to improve security) any changes you make to the existing style sheet are overwritten by the update, erasing your hard work. There is a way around this: use a plugin that keeps your changes safe from updates. We will be using a plugin called "Jetpack" to accomplish this task. Jetpack functions by leaving the theme's existing CSS untouched while _inserting_ your modified style rules before rendering what is seen in the browser.
+
+---
+
+### Finding Your Theme's Styles
+
+<span style="font-weight: 400">We are going to focus on modifying styles that are already there, rather than writing our own CSS from scratch. In order to change an existing style, you have to find it first. This can be done using the developer tools already built into your web browser. We will be using Google Chrome for this workshop, but most modern browsers offer similar tools.</span> <span style="font-weight: 400">It’s important to note that when using the inspector, you can edit your theme’s CSS, but not the HTML. That is because the HTML you see in your inspector is dynamically generated by PHP, and is not something you can directly edit. That’s OK though, because you can do a lot with CSS to modify your site’s appearance, as you will see in the upcoming exercises.</span>
+
+---
+
+### How to target a specific element in CSS?
+There are different ways to target a specific element in CSS depending upon the element itself. Below are the most common ways to target an element.
+
+**1.Using its element name.**
+
+Targeting element with its name is the most common way. we will use its name to target it and give it new properties and values. Let's see how it works.
+
+If you want to target a 'p' tag and assing its font-size property to 16px you will do that as below:
+<pre>p {
+font-size: 16px;
+}
+</pre>
+
+Note: Here all 'p' tags in your document will be targeted.
+
+**2.Using its class.**
+
+A single class can be used multiple times and for different elements in a single document. If the element to be targeted has class, you can target it using that class. For targeting a class in CSS you will use a dot '.' before its class name. Let's see how it works.
+
+Assume you have a 'p' tag with class 'text-small' which will look something like this `<p class="text-small">Hello World!</p>` and you want its 'font-size' to be '12px'. You will write it as below:
+
+<pre>p.text-small {
+    font-size: 12px;
+}
+</pre>
+
+Note: Here only 'p' tags with class 'text-small' will be targeted. If you want all the elements, no matter which they are, to be targeted you will simply remove 'p' and will just use .text-small. This will target all the element with class 'text-small'.
+
+
+**3.Using its ID.**
+
+Unlike class, id should be always unique in your HTML document. To target an element with id you will have to just replace that dot '.' which you used for class with hash '#'. For example, if you have a 'p' tag with id 'name' which will look something like this: `<p id="name">John Doe</p>` and you want it to be bold you will target it as follow:
+
+<pre>#name {
+    font-weight: bold;
+}
+</pre>
+
+Note: While targeting id you can also mention tag name before id name. It will look like this 'p#name'.
+
+
+### Using the WordPress Customizer
+WordPress allows you to add custom CSS styles via the WordPress Dashboard. Simply go to 'Appearance -> Customize'. Click on the 'Additional CSS' tab. Type in your custom styles without the `<style>...</style>` tag. Save your changes by clicking the 'Publish' button at the top. <br>
+[![right-click to inspect](/images/additional-css.jpg)](/images/additional-css.jpg)
+
+### Using Gutenberg Blocks (WordPress 5.0+)
+The introduction of Gutenberg Blocks now allows users to add `Custom HTML` blocks to individual pages or posts. In the Editor, add a `Custom HTML` block. Inside the block, type in your CSS *within* the `<style>...</style>` tag.<br>
+[![right-click to inspect](/images/gutenberg-block.jpg)](/images/gutenberg-block.jpg)
 
 ### Lesson Wrap Up
 
