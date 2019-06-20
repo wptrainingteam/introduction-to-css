@@ -43,7 +43,6 @@ How much experience would a participant need to get the most from this lesson?
 * [ ] Show & Tell
 * [x] Tutorial
 
-
 ## Time Estimate (Duration)
 
 * [x] 1 hour or less
@@ -51,6 +50,7 @@ How much experience would a participant need to get the most from this lesson?
 * [ ] 5-8 hours (full-day)
 * [ ] 2 days
 * [ ] 3 days or more
+
 
 ## Prerequisite Skills
 
@@ -82,7 +82,7 @@ You will be better equipped to work through this lesson if you have experience i
 * [Online Color picker tool](http://www.colorpicker.com/)
 * [W3C CSS validator](http://www.css-validator.org/validator)
 
-## Notes for the Instructor
+## Notes for the Presenter
 
 ### Pre-requisites:
 
