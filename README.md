@@ -22,6 +22,7 @@ After completing this lesson, you will be able to:
 * [ ] Organizers
 * [ ] Kids
 
+
 ## Experience Level
 
 How much experience would a participant need to get the most from this lesson?
@@ -29,6 +30,7 @@ How much experience would a participant need to get the most from this lesson?
 * [x] Beginner
 * [ ] Intermediate
 * [ ] Advanced
+
 
 ## Type of Instruction
 
@@ -88,11 +90,11 @@ This module is intended for anyone just starting out with WordPress, but who has
 
 ### Set up:
 
-- The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
-- Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
-- It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
-- Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
-- To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
+* The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
+* Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
+* It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
+* Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
+* To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
 
 ## Lesson Outline
 
