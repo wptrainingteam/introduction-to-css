@@ -80,7 +80,7 @@ You will be better equipped to work through this lesson if you have experience i
 * [Online Color picker tool](http://www.colorpicker.com/)
 * [W3C CSS validator](http://www.css-validator.org/validator)
 
-## Notes for the Instructor
+## Notes for the Presenter
 
 ### Pre-requisites:
 
@@ -104,9 +104,9 @@ This module is intended for anyone just starting out with WordPress, but who has
 
 **Exercise 1 - Modifying Fonts** For this exercise, we will be making changes to the blog title text found at the top of blog articles on your site. To locate the CSS for this element, right click on any blog title on your test site's home page. Next choose the **Inspect** option, which will launch your browser's developer tools. [![right-click to inspect](/images/right-click-to-inspect.jpg)](/images/right-click-to-inspect.jpg) In the panel below you will see a split view, with:
 
-- Site HTML on the left with the element you selected highlighted.
-- CSS rules on the right that apply to that selected element on the right.
-- Above is your website, where you can see your changes previewed live.
+* Site HTML on the left with the element you selected highlighted.
+* CSS rules on the right that apply to that selected element on the right.
+* Above is your website, where you can see your changes previewed live.
 
 If you were careful in where you placed your cursor, you should see the HTML starting with `<a href="http://` and then the permalink to that blog post. You should also see styles displayed on the right, all of which have a style rule that applies to the element we've highlighted. In particular, we are interested in this CSS declaration:
 
@@ -269,7 +269,7 @@ Finally, save your changes, and with that our transformation of this site is com
 
 ## Additional Resources
 
-[CSS](https://codex.wordpress.org/CSS) @ Codex
+* [CSS](https://codex.wordpress.org/CSS) @ Codex
 
 ## Hands-on Walkthrough
 
