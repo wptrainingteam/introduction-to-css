@@ -8,19 +8,19 @@ In this lesson you will learn about CSS (Cascading Style Sheet) and how it is th
 
 After completing this lesson, you will be able to:
 
-- Define CSS and explain what it does.
-- Recognize the language of CSS.
-- Use basic CSS to modify your site’s appearance.
-- Use WordPress Customizer and Gutenberg Blocks to add custom CSS to your site or pages.
+* Define CSS and explain what it does.
+* Recognize the language of CSS.
+* Use basic CSS to modify your site’s appearance.
+* Use WordPress Customizer and Gutenberg Blocks to add custom CSS to your site or pages.
 
 ## Target Audience
 
-* [ ] Users
+* [ ] Users / Content Writers
 * [x] Designers
 * [x] Developers
 * [ ] Speakers
-* [ ] All
-
+* [ ] Organizers
+* [ ] Kids
 
 ## Experience Level
 
@@ -29,8 +29,6 @@ How much experience would a participant need to get the most from this lesson?
 * [x] Beginner
 * [ ] Intermediate
 * [ ] Advanced
-* [ ] Any
-
 
 ## Type of Instruction
 
@@ -39,29 +37,34 @@ How much experience would a participant need to get the most from this lesson?
 * [x] Exercises
 * [ ] Feedback
 * [ ] Lecture (Presentation)
+* [ ] Slides
 * [ ] Show & Tell
 * [x] Tutorial
 
-
 ## Time Estimate (Duration)
 
-30 minutes
+* [x] 1 hour or less
+* [ ] 2-4 hours (half-day)
+* [ ] 5-8 hours (full-day)
+* [ ] 2 days
+* [ ] 3 days or more
+
 
 ## Prerequisite Skills
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
 
-- Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
-- Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
-- Basic understanding of HTML.
+* Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
+* Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
+* Basic understanding of HTML.
 
 
 ## Readiness Questions
 
-1.  Are you familiar with installing and activating themes via the WordPress Dashboard?
-2.  Have you used the tools found under the "Appearance" tab in your dashboard to customize your theme?
-3.  Do you have at least a basic knowledge of HTML?
-4.  Will you have a locally or remotely hosted sandbox WordPress site to use during class?
+* Are you familiar with installing and activating themes via the WordPress Dashboard?
+* Have you used the tools found under the "Appearance" tab in your dashboard to customize your theme?
+* Do you have at least a basic knowledge of HTML?
+* Will you have a locally or remotely hosted sandbox WordPress site to use during class?
 
 
 ## Slides
@@ -70,12 +73,12 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Materials Needed
 
-- [Twenty Twelve theme](http://wordpress.org/themes/twentytwelve)
-- [Sample XML file](https://cloudup.com/ceStaDp8uY2) - XML import file
-- [Sample Images (.zip)](https://cloudup.com/cG24oZL8b6U) - Have students add to the Media Library
-- [Jetpack plugin](http://wordpress.org/plugins/jetpack/) (+ activate Custom CSS module)
-- [Online Color picker tool](http://www.colorpicker.com/)
-- [W3C CSS validator](http://www.css-validator.org/validator)
+* [Twenty Twelve theme](http://wordpress.org/themes/twentytwelve)
+* [Sample XML file](https://cloudup.com/ceStaDp8uY2) - XML import file
+* [Sample Images (.zip)](https://cloudup.com/cG24oZL8b6U) - Have students add to the Media Library
+* [Jetpack plugin](http://wordpress.org/plugins/jetpack/) (+ activate Custom CSS module)
+* [Online Color picker tool](http://www.colorpicker.com/)
+* [W3C CSS validator](http://www.css-validator.org/validator)
 
 ## Notes for the Instructor
 
