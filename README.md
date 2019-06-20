@@ -66,7 +66,7 @@ You will be better equipped to work through this lesson if you have experience i
 
 ## Slides
 
-*   [Slides](https://wptrainingteam.github.io/lesson-plans/introduction-to-css/slides/)
+*   [Slides](https://wptrainingteam.github.io/lesson-plan/introduction-to-css/slides/)
 
 ## Materials Needed
 
