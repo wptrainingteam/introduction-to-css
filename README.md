@@ -350,7 +350,7 @@ The introduction of Gutenberg Blocks now allows users to add `Custom HTML` block
 [![right-click to inspect](/images/gutenberg-block.jpg)](/images/gutenberg-block.jpg)
 Another Gutenberg feature is that you can add 'Additional CSS Class' to your blocks.<br>
 To do so, click the block you want to add the additional css class. Then at the right side, at the Gutenberg sidebar, scroll down till you see the advanced menu. Click on it and inside the 'Additional CSS Class' box, declare your class.
-[![right-click to inspect](/images/additional-css-class.jpg)](/images/additional-css-class.jpg)
+[![additional css class](/images/additional-css-class.jpg)](/images/additional-css-class.jpg)
 
 ### Lesson Wrap Up
 
