@@ -8,18 +8,19 @@ In this lesson you will learn about CSS (Cascading Style Sheet) and how it is th
 
 After completing this lesson, you will be able to:
 
-- Define CSS and explain what it does.
-- Recognize the language of CSS.
-- Use basic CSS to modify your site’s appearance.
-- Use WordPress Customizer and Gutenberg Blocks to add custom CSS to your site or pages.
+* Define CSS and explain what it does.
+* Recognize the language of CSS.
+* Use basic CSS to modify your site’s appearance.
+* Use WordPress Customizer and Gutenberg Blocks to add custom CSS to your site or pages.
 
 ## Target Audience
 
-* [ ] Users
+* [ ] Users / Content Writers
 * [x] Designers
 * [x] Developers
 * [ ] Speakers
-* [ ] All
+* [ ] Organizers
+* [ ] Kids
 
 
 ## Experience Level
@@ -29,7 +30,6 @@ How much experience would a participant need to get the most from this lesson?
 * [x] Beginner
 * [ ] Intermediate
 * [ ] Advanced
-* [ ] Any
 
 
 ## Type of Instruction
@@ -39,43 +39,48 @@ How much experience would a participant need to get the most from this lesson?
 * [x] Exercises
 * [ ] Feedback
 * [ ] Lecture (Presentation)
+* [ ] Slides
 * [ ] Show & Tell
 * [x] Tutorial
 
 
 ## Time Estimate (Duration)
 
-30 minutes
+* [x] 1 hour or less
+* [ ] 2-4 hours (half-day)
+* [ ] 5-8 hours (full-day)
+* [ ] 2 days
+* [ ] 3 days or more
 
 ## Prerequisite Skills
 
 You will be better equipped to work through this lesson if you have experience in and familiarity with:
 
-- Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
-- Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
-- Basic understanding of HTML.
+* Basic knowledge of [installing and activating WordPress themes.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-a-theme/)
+* Basic knowledge of [installing and activating WordPress plugins.](https://make.wordpress.org/training/handbook/lesson-plans/user-lessons/choosing-and-installing-plugins/)
+* Basic understanding of HTML.
 
 
 ## Readiness Questions
 
-1.  Are you familiar with installing and activating themes via the WordPress Dashboard?
-2.  Have you used the tools found under the "Appearance" tab in your dashboard to customize your theme?
-3.  Do you have at least a basic knowledge of HTML?
-4.  Will you have a locally or remotely hosted sandbox WordPress site to use during class?
+* Are you familiar with installing and activating themes via the WordPress Dashboard?
+* Have you used the tools found under the "Appearance" tab in your dashboard to customize your theme?
+* Do you have at least a basic knowledge of HTML?
+* Will you have a locally or remotely hosted sandbox WordPress site to use during class?
 
 
 ## Slides
 
-*   [Slides](https://wptrainingteam.github.io/lesson-plans/introduction-to-css/slides/)
+*   [Slides](https://wptrainingteam.github.io/lesson-plan/introduction-to-css/slides/)
 
 ## Materials Needed
 
-- [Twenty Twelve theme](http://wordpress.org/themes/twentytwelve)
-- [Sample XML file](https://cloudup.com/ceStaDp8uY2) - XML import file
-- [Sample Images (.zip)](https://cloudup.com/cG24oZL8b6U) - Have students add to the Media Library
-- [Jetpack plugin](http://wordpress.org/plugins/jetpack/) (+ activate Custom CSS module)
-- [Online Color picker tool](http://www.colorpicker.com/)
-- [W3C CSS validator](http://www.css-validator.org/validator)
+* [Twenty Twelve theme](http://wordpress.org/themes/twentytwelve)
+* [Sample XML file](https://cloudup.com/ceStaDp8uY2) - XML import file
+* [Sample Images (.zip)](https://cloudup.com/cG24oZL8b6U) - Have students add to the Media Library
+* [Jetpack plugin](http://wordpress.org/plugins/jetpack/) (+ activate Custom CSS module)
+* [Online Color picker tool](http://www.colorpicker.com/)
+* [W3C CSS validator](http://www.css-validator.org/validator)
 
 ## Notes for the Instructor
 
@@ -85,11 +90,11 @@ This module is intended for anyone just starting out with WordPress, but who has
 
 ### Set up:
 
-- The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
-- Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
-- It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
-- Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
-- To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
+* The preferred answers to the screening questions is "yes." Participants who reply "no" to all 4 questions may not be ready for this lesson.
+* Performing a live demo while teaching the steps to modify theme CSS is crucial to having the "hands on" understanding of the material.
+* It is easiest for students to work on a locally installed copy of WordPress. Set some time aside before class to assist students with installing WordPress locally if they need it. For more information on how to install WordPress locally, please visit our [Teacher Resources page](http://make.wordpress.org/training/teacher-resources/).
+* Jetpack is automatically in [Development Mode](http://jetpack.me/support/development-mode/) and does not need to be activated with a WordPress.com user account.
+* To use Jetpack on a live site, a WordPress.com account will be required by each attendee to activate the plugin.
 
 ## Lesson Outline
 
@@ -101,9 +106,9 @@ This module is intended for anyone just starting out with WordPress, but who has
 
 **Exercise 1 - Modifying Fonts** For this exercise, we will be making changes to the blog title text found at the top of blog articles on your site. To locate the CSS for this element, right click on any blog title on your test site's home page. Next choose the **Inspect** option, which will launch your browser's developer tools. [![right-click to inspect](/images/right-click-to-inspect.jpg)](/images/right-click-to-inspect.jpg) In the panel below you will see a split view, with:
 
-- Site HTML on the left with the element you selected highlighted.
-- CSS rules on the right that apply to that selected element on the right.
-- Above is your website, where you can see your changes previewed live.
+* Site HTML on the left with the element you selected highlighted.
+* CSS rules on the right that apply to that selected element on the right.
+* Above is your website, where you can see your changes previewed live.
 
 If you were careful in where you placed your cursor, you should see the HTML starting with `<a href="http://` and then the permalink to that blog post. You should also see styles displayed on the right, all of which have a style rule that applies to the element we've highlighted. In particular, we are interested in this CSS declaration:
 
@@ -266,7 +271,7 @@ Finally, save your changes, and with that our transformation of this site is com
 
 ## Additional Resources
 
-[CSS](https://codex.wordpress.org/CSS) @ Codex
+* [CSS](https://codex.wordpress.org/CSS) @ Codex
 
 ## Hands-on Walkthrough
 
